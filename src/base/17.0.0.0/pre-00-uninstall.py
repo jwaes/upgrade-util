@@ -8,7 +8,8 @@ _logger = logging.getLogger(__name__)
 def migrate(cr, version):
     
     modules_to_uninstall = [
-        'jt_repeat_products ',
+        'jt_documents_product',
+        'jt_documents_website',
     ]
 
     for candidate in modules_to_uninstall:
